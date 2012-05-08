@@ -1,0 +1,42 @@
+name: Books
+version: "0.3.1 beta"
+author: iiMaXii
+website: http://www.djupfryst.com/
+
+main: com.djupfryst.books.Books
+
+commands:
+   w:
+      description: Access the book commands
+      usage: |
+         /write <title>
+         /write <text>
+   bookstest:
+      description: Test the MinecraftFont class
+      usage: |
+         /bookstest print
+         /bookstest find
+         /bookstest <number>
+         /bookstest bold
+permissions:
+  books.write:
+    description: Enables you to write to books
+    default: true
+  books.addAuthor:
+    description: Allows you to add an author (can only be done the creator of a book)
+    default: true
+  books.colour:
+    description: Allows you to use colours
+    default: false
+  books.format:
+    description: Allows you to use formatting (bold, italic, strikethrough and underline)
+    default: false
+  books.putInShelf:
+    description: Allows you to put a book into bookshelf
+    default: true
+  books.copyFromShelf:
+    description: Allows you to copy a book from a bookshelf
+    default: true
+  books.craftCopy:
+    description: Allows you to craft a copy of a book
+    default: true

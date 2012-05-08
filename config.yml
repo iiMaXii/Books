@@ -1,0 +1,2 @@
+undoLimit: 20    # The number of actions that will be saved for the --undo command
+craftCopy: true  # Crafting copies of books
